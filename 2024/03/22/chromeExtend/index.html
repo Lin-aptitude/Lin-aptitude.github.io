@@ -6,20 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://web-zlinc.github.io">
-  <title>Tag: GGEditor | Lin的博客</title>
+  <title>Chrome扩展程序的开发及服务器部署实时更新 | Lin的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="了解真相，才能真正获得自由">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lin的博客">
-<meta property="og:url" content="https://web-zlinc.github.io/tags/GGEditor/index.html">
+  <meta name="description" content="扩展程序是什么扩展程序主要是能够修改或增强 Chrome 浏览器功能的小程序。对前端开发人员非常友好，因为扩展程序是使用 Web 开发技术创建的：HTML、CSS 和 JavaScript。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chrome扩展程序的开发及服务器部署实时更新">
+<meta property="og:url" content="https://web-zlinc.github.io/2024/03/22/chromeExtend/index.html">
 <meta property="og:site_name" content="Lin的博客">
-<meta property="og:description" content="了解真相，才能真正获得自由">
+<meta property="og:description" content="扩展程序是什么扩展程序主要是能够修改或增强 Chrome 浏览器功能的小程序。对前端开发人员非常友好，因为扩展程序是使用 Web 开发技术创建的：HTML、CSS 和 JavaScript。">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6be124e9a0a546e287616ccc06cbb0ed~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=961&h=678&s=87759&e=png&b=fdfdfd">
+<meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e1ff4e2b93b243eeb1ca0f53297b1f3e~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=730&h=606&s=59468&e=png&b=666666">
+<meta property="og:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/46c1b161e10f4ac292b75d54a40d922f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1587&h=833&s=509100&e=png&b=fcfbfb">
+<meta property="og:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/abace0043e3c4e9d9eace68b153baa3f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1105&h=687&s=51879&e=png&b=fefefe">
+<meta property="og:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb2b315b65d1480fb13ce0fd79fcfc68~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1414&h=634&s=99359&e=png&b=fafafa">
+<meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c4af71381c9045e79494b5e67026c035~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1076&h=900&s=94273&e=png&b=fefefe">
+<meta property="article:published_time" content="2024-03-22T11:05:00.000Z">
+<meta property="article:modified_time" content="2024-03-27T22:26:51.077Z">
 <meta property="article:author" content="web_lin">
-<meta property="article:tag" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="插件部署">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6be124e9a0a546e287616ccc06cbb0ed~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=961&h=678&s=87759&e=png&b=fdfdfd">
   
     <link rel="alternative" href="/atom.xml" title="Lin的博客" type="application/atom+xml">
   
@@ -197,73 +209,323 @@
                                             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                                         </div>
                                         <div id="js-content" class="content-ll">
-                                            
-  
-  
+                                            <article id="page-chromeExtend" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/06/14/projectShare/" class="archive-article-date">
-        <time datetime="2021-06-14T14:37:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-14</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/06/14/projectShare/" target="_blank">React+Dva+Umi+Antd项目日常开发问题清单</a>
   
+    <h1 class="article-title" itemprop="name">
+      Chrome扩展程序的开发及服务器部署实时更新
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2024/03/22/chromeExtend/" class="archive-article-date">
+        <time datetime="2024-03-22T11:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-03-22</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">2.3k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">9分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="扩展程序是什么"><a href="#扩展程序是什么" class="headerlink" title="扩展程序是什么"></a>扩展程序是什么</h3><p>扩展程序主要是能够修改或增强 Chrome 浏览器功能的小程序。对前端开发人员非常友好，因为扩展程序是使用 Web 开发技术创建的：HTML、CSS 和 JavaScript。</p>
+<span id="more"></span>
+
+<h3 id="开发入门"><a href="#开发入门" class="headerlink" title="开发入门"></a>开发入门</h3><p>chrome扩展程序主要由一下几部分组成</p>
+<ul>
+<li><strong>manifest.json：</strong> 相当于插件的 meta 信息，包含插件的名称、版本号、图标、脚本文件名称等，这个文件是每个插件都必须提供的，其他几部分都是可选的。</li>
+<li><strong>background script：</strong> 可以调用全部的 chrome 插件 API，实现跨域请求、网页截屏、弹出 chrome 通知消息等功能。相当于在一个隐藏的浏览器页面内默默运行。</li>
+<li><strong>页面功能：</strong> 包括点击插件图标弹出的页面（简称 popup）、插件的配置页面（简称 options）。</li>
+<li><strong>content script：</strong> 早期也被称为 injected script，是插件注入到页面的脚本，但是不会体现在页面 DOM 结构里。content script 可以操作 DOM，但是它和页面其他的脚本是隔离的，访问不到其他脚本定义的变量、函数等，相当于运行在单独的沙盒里。content script 可以调用有限的 chrome 插件 API，网络请求收到同源策略限制。</li>
+</ul>
+<h4 id="manifest-json字段说明"><a href="#manifest-json字段说明" class="headerlink" title="manifest.json字段说明"></a>manifest.json字段说明</h4><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="comment">// Required - 通俗易懂</span></span><br><span class="line">  <span class="attr">&quot;manifest_version&quot;</span><span class="punctuation">:</span> <span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;My Extension&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;versionString&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">   <span class="comment">// 『重点』action配置项主要用于点击图标弹出框，对于弹出框接受的是html文件</span></span><br><span class="line">  <span class="attr">&quot;action&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">     <span class="attr">&quot;default_title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Click to view a popup&quot;</span><span class="punctuation">,</span></span><br><span class="line">   	 <span class="attr">&quot;default_popup&quot;</span><span class="punctuation">:</span> <span class="string">&quot;popup.html&quot;</span></span><br><span class="line">   <span class="punctuation">&#125;</span></span><br><span class="line">    </span><br><span class="line">  <span class="comment">// 通俗易懂</span></span><br><span class="line">  <span class="attr">&quot;default_locale&quot;</span><span class="punctuation">:</span> <span class="string">&quot;en&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;A plain text description&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;icons&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span>...<span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;author&quot;</span><span class="punctuation">:</span> ...<span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 『重点』下面将出现的background.js 配置service work</span></span><br><span class="line">  <span class="attr">&quot;background&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="comment">// Required</span></span><br><span class="line">    <span class="attr">&quot;service_worker&quot;</span><span class="punctuation">:</span> <span class="string">&quot;service-worker.js&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 『重点』下面将出现content_script.js 应用于所有页面上下文的js</span></span><br><span class="line">  <span class="attr">&quot;content_scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">     <span class="punctuation">&#123;</span></span><br><span class="line">       <span class="attr">&quot;matches&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;https://*.nytimes.com/*&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">       <span class="attr">&quot;css&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;my-styles.css&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">       <span class="attr">&quot;js&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;content-script.js&quot;</span><span class="punctuation">]</span></span><br><span class="line">     <span class="punctuation">&#125;</span></span><br><span class="line">   <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用/添加devtools中的功能</span></span><br><span class="line">  <span class="attr">&quot;devtools_page&quot;</span><span class="punctuation">:</span> <span class="string">&quot;devtools.html&quot;</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 三个permission</span></span><br><span class="line"><span class="comment">    * host_permissions - 允许使用扩展的域名</span></span><br><span class="line"><span class="comment">    * permissions - 包含已知字符串列表中的项目 【只需一次弹框要求允许】</span></span><br><span class="line"><span class="comment">    * optional_permissions - 与常规类似permissions，但由扩展的用户在运行时授予，而不是提前授予【安全】</span></span><br><span class="line"><span class="comment">    * 列出常见选项</span></span><br><span class="line"><span class="comment">    * &#123;</span></span><br><span class="line"><span class="comment">    *		activeTab: 当扩展卡选项被改变需要重新获取新的权限</span></span><br><span class="line"><span class="comment">    *		tabs: 操作选项卡api（改变位置等）</span></span><br><span class="line"><span class="comment">    *		downloads: 访问chrome.downloads API 的权限 便于下载但还是会受到跨域影响</span></span><br><span class="line"><span class="comment">    *		history: history api权限</span></span><br><span class="line"><span class="comment">    *		storage: 访问localstorage/sessionStorage权限</span></span><br><span class="line"><span class="comment">    * &#125;</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">  <span class="attr">&quot;host_permissions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;http://*/*&quot;</span><span class="punctuation">,</span> <span class="string">&quot;https://*/*&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;permissions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;tabs&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;optional_permissions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;downloads&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 内部弹出可选页面 - 见fehelper操作页</span></span><br><span class="line">  <span class="attr">&quot;options_page&quot;</span><span class="punctuation">:</span> <span class="string">&quot;options.html&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;options_ui&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;chrome_style&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;page&quot;</span><span class="punctuation">:</span> <span class="string">&quot;options.html&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="popup-–-弹窗页面"><a href="#popup-–-弹窗页面" class="headerlink" title="popup – 弹窗页面"></a>popup – 弹窗页面</h4><p>popup 页面也非常好理解，在 <code>manifest.json</code> 的定义里它是 <code>browser_action</code>， 就是我们扩展程序的界面（弹窗页）</p>
+<h4 id="content-script"><a href="#content-script" class="headerlink" title="content script"></a>content script</h4><blockquote>
+<p>content script 脚本是指能够在浏览器已经加载的页面内部运行的 javascript 脚本。可以理解为在页面加载玩完毕之后扩展程序会为页面注入一个或多个脚本，这些脚本可以获得浏览器所访问的 web 页面的详细信息。也就是我们可以利用这个脚本收集页面上各种我们需要的信息。</p>
+</blockquote>
+<p>注入方式有两种：</p>
+<ul>
+<li><p>manifest.json文件声明式注入</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;content_scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;matches&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;http://*/*&quot;</span><span class="punctuation">,</span> <span class="string">&quot;https://*/*&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;run_at&quot;</span><span class="punctuation">:</span> <span class="string">&quot;document_idle&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;js&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;content.js&quot;</span><span class="punctuation">]</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>各个字段都比较直观。其中：</p>
+<ol>
+<li> matches 表示页面 url 匹配时才加载</li>
+<li> <code>run_at</code> 表示在什么时机加载，一般是 <code>document_idle</code>，避免 content_scripts 影响页面加载性能。</li>
+</ol>
+<p>  需要注意的是，如果用户已经打开了 N 个页面，然后再安装插件，这 N 个页面除非重新刷新，否则是不会加载 manifest 声明的 content_scripts。安装插件之后新打开的页面是可以加载 content_scripts 的。</p>
+</li>
+<li><p>用程序动态注入脚本，代码如下：</p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chrome.<span class="property">tabs</span>.<span class="title function_">executeScript</span>(&#123;</span><br><span class="line">  <span class="attr">file</span>: <span class="string">&#x27;content.js&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="background-–-后台网页"><a href="#background-–-后台网页" class="headerlink" title="background – 后台网页"></a>background – 后台网页</h4><p>chrome扩展程序将后台网页分为两种类型：</p>
+</li>
+<li><p>  持续运行的后台网页</p>
+</li>
+<li><p>  事件页面</p>
+</li>
+</ul>
+<p><strong>是否持久存在是事件页面与后台网页之间的根本区别</strong>。</p>
+<blockquote>
+<p>应用和扩展程序通常需要长时间运行的脚本来管理某些任务或状态，这就是后台页面的作用。事件页面只在需要时加载，当事件页面不活动时就会卸载，以便释放内存和其他系统资源，所以一般而言是推荐使用事件页面。</p>
+</blockquote>
+<p>它存在的目的在于，在扩展的整个生命周期内需要长时间管理一些任务或状态。它的主要功能及适用场景，大致如下：</p>
+<ul>
+<li>  事件页面监听的某个事件触发</li>
+<li>  应用或扩展程序第一次安装或者更新到新版本（为了注册事件）</li>
+<li>  内容脚本或其他扩展程序发送消息</li>
+<li>  扩展程序中的其他视图调用了 runtime.getBackgroundPage</li>
+</ul>
+<h4 id="Content-Script向background通信"><a href="#Content-Script向background通信" class="headerlink" title="Content Script向background通信"></a>Content Script向background通信</h4><ul>
+<li>注入页面脚本content.js<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 发送消息</span></span><br><span class="line">  chrome.<span class="property">runtime</span>.<span class="title function_">sendMessage</span>(</span><br><span class="line">  &#123;</span><br><span class="line">      <span class="attr">msg</span>: <span class="string">&#x27;从 Content Script 向 事件页面 传递消息&#x27;</span>,</span><br><span class="line">      <span class="attr">result</span>: <span class="number">1</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="keyword">function</span>(<span class="params">response</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> (response &amp;&amp; response.<span class="property">msg</span>) &#123;</span><br><span class="line">          <span class="variable language_">console</span>.<span class="title function_">log</span>(response.<span class="property">msg</span>);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  );</span><br></pre></td></tr></table></figure></li>
+<li>background.js 后台页面<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 接收消息</span></span><br><span class="line">chrome.<span class="property">runtime</span>.<span class="property">onMessage</span>.<span class="title function_">addListener</span>(<span class="keyword">function</span>(<span class="params">request, sender, sendResponse</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (request.<span class="property">result</span>) &#123;</span><br><span class="line">      <span class="title function_">sendResponse</span>(&#123;</span><br><span class="line">          <span class="attr">farewell</span>: <span class="string">&quot;ok&quot;</span></span><br><span class="line">      &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+在发送端，可以使用 <code>runtime.sendMessage</code> 或 <code>tabs.sendMessage</code> 方法。这些方法分别允许您从内容脚本向扩展程序或者反过来发送可通过 JSON 序列化的消息，可选的 callback 参数允许您在需要的时候从另一边处理回应。</li>
+</ul>
+<p>而在接收端，我们需要设置一个 <code>runtime.onMessage</code> 事件监听器来处理消息。</p>
+<h4 id="popup-弹窗向ContentScript通信"><a href="#popup-弹窗向ContentScript通信" class="headerlink" title="popup 弹窗向ContentScript通信"></a>popup 弹窗向ContentScript通信</h4><ul>
+<li>popup弹窗页面<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    <span class="attr">msg</span>: <span class="string">&#x27;从 popup 弹窗页面  向 Content Script 传递消息&#x27;</span>,</span><br><span class="line">    <span class="attr">result</span>: <span class="number">0</span></span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 发送消息</span></span><br><span class="line">  chrome.<span class="property">tabs</span>.<span class="title function_">query</span>(&#123; <span class="attr">active</span>: <span class="literal">true</span>, <span class="attr">currentWindow</span>: <span class="literal">true</span> &#125;, <span class="keyword">function</span>(<span class="params">tabs</span>) &#123;</span><br><span class="line">    chrome.<span class="property">tabs</span>.<span class="title function_">sendMessage</span>(tabs[<span class="number">0</span>].<span class="property">id</span>, obj, <span class="keyword">function</span>(<span class="params">response</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Send Success&quot;</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure></li>
+<li>Content Script<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 接收消息</span></span><br><span class="line">chrome.<span class="property">runtime</span>.<span class="property">onMessage</span>.<span class="title function_">addListener</span>(<span class="keyword">function</span>(<span class="params">request, sender, sendResponse</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(sender.<span class="property">tab</span> ? <span class="string">&quot;来自内容脚本：&quot;</span> + sender.<span class="property">tab</span>.<span class="property">url</span> : <span class="string">&quot;来自扩展程序&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (request &amp;&amp; !request.<span class="property">result</span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(result.<span class="property">msg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+需要注意，从 popup 弹窗页面 向 Content Script 传递消息时，由于浏览器可能同时打开多个 tab 页，所以需要指定一下传递的页面，指定发送至哪一个标签页。</li>
+</ul>
+<p>使用 <code>chrome.tabs.query(&#123; active: true, currentWindow: true &#125;, function(tabs) &#123;&#125;)</code> 则能正确选中当前打开的标签页。</p>
+<h3 id="服务器部署"><a href="#服务器部署" class="headerlink" title="服务器部署"></a>服务器部署</h3><ol>
+<li>修改扩展程序源码根目录下manifest.json配置文件version字段值, 同时添加update_url字段，该字段值为服务器提供的获取更新插件的update.xml文件的接口<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Getting Started Example&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Build an Extension!&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;manifest_version&quot;</span><span class="punctuation">:</span> <span class="number">3</span><span class="punctuation">,</span></span><br><span class="line">   <span class="attr">&quot;update_url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;http://xxx.xx.xxx:xxxx/update.xml&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li>将开发好的扩展程序打包成crx文件，打开chrome浏览器开发者工具选择扩展程序并开启开发者模式</li>
+</ol>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6be124e9a0a546e287616ccc06cbb0ed~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=961&h=678&s=87759&e=png&b=fdfdfd" alt="image.png"><br><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e1ff4e2b93b243eeb1ca0f53297b1f3e~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=730&h=606&s=59468&e=png&b=666666" alt="image.png"><br>3. 将打包好的crx文件拷贝到服务器对应目录下，并在同级目录创建update.xml文件</p>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/46c1b161e10f4ac292b75d54a40d922f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1587&h=833&s=509100&e=png&b=fcfbfb" alt="image.png"><br>update.xml文件内容如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27;?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">gupdate</span> <span class="attr">xmlns</span>=<span class="string">&#x27;http://www.google.com/update2/response&#x27;</span> <span class="attr">protocol</span>=<span class="string">&#x27;2.0&#x27;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">app</span> <span class="attr">appid</span>=<span class="string">&#x27;xxxxxxxxxxxxxxxxxxxxxxxxxxx&#x27;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">updatecheck</span> <span class="attr">codebase</span>=<span class="string">&#x27;http://xxx.xx.xx:xxx/home/updata/busnissHelper.crx&#x27;</span> <span class="attr">version</span>=<span class="string">&#x27;1.1.5&#x27;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">app</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">gupdate</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>xml文件需要注意</strong></p>
+<ul>
+<li>appid：扩展程序源码打包成crx文件后拖拽到扩展程序里显示多的id</li>
+<li>codebase：对应后端提供的获取crx文件的接口路径</li>
+<li>version：与扩展程序源码根目录下manifest.json配置文件下的version字段值一致</li>
+</ul>
+</blockquote>
+<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/abace0043e3c4e9d9eace68b153baa3f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1105&h=687&s=51879&e=png&b=fefefe" alt="image.png"><br>4. 服务器相关文件更新替换好后，利用docker可视化管理工具重新部署</p>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fb2b315b65d1480fb13ce0fd79fcfc68~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1414&h=634&s=99359&e=png&b=fafafa" alt="image.png"><br>5. 查看扩展程序更新后的效果</p>
+<p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c4af71381c9045e79494b5e67026c035~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1076&h=900&s=94273&e=png&b=fefefe" alt="image.png"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上主要是对Manifest V3进行的讲解的。V2与V3相关配置有所更新，可参考<a target="_blank" rel="noopener" href="https://doc.yilijishu.info/chrome/mv3-migration-checklist.html">迁移清单</a>。<br>另外我在开发过程中遇到过一下问题：</p>
+<ul>
+<li>扩展程序如要使用第三方库（如：JQuery）需要将压缩文件下载到本地源码目录不能通过cdn的形式引入使用</li>
+<li>使用V3版本设计到异步请求的可以直接使用内置fetch与服务端通信</li>
+</ul>
+<p>总体来讲，chrome扩展程序开发对前端开发是比较友好且易上手的，需要着重关注的有contentScript、backgroundScript、Manifest.json这几个模块，涉及到chrome提供的api可参考<a target="_blank" rel="noopener" href="https://developer.chrome.com/docs/extensions/reference/scripting/#type-CSSInjection" title="Google Chrome Extension官方文档">Google Chrome Extension官方文档</a>。</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/assets/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          web_lin
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://web-zlinc.github.io/2024/03/22/chromeExtend/" title="Chrome扩展程序的开发及服务器部署实时更新" target="_blank">https://web-zlinc.github.io/2024/03/22/chromeExtend/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">typeScript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">GGEditor</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">插件部署</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://web-zlinc.github.io/2024/03/22/chromeExtend/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2023/08/05/designMode/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端设计模式总结</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                                         </div>
@@ -304,9 +566,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
